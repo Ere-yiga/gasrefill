@@ -27,6 +27,8 @@ body{
     min-height: 100vh;
     background-position: center;
     display: flex;
+    margin: 0 4px;
+    border-radius: 10px;
 }
 
 .hero-msg{
@@ -141,7 +143,6 @@ footer{
     color: white;
     text-align: center;
     padding: 2rem 0;
-
 }
 /* @media (max-width: 768px) {
     .hero h1 {
