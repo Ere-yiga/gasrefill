@@ -86,19 +86,54 @@ a:hover{
 input{
     margin-top: .4rem;
     max-height: 1.3rem;
+    border: 1px solid #ccc;
+    outline: none;           
+    border-radius: 4px;      
 }
 
-input:active{
-    border: 1px solid brown;
+input:focus{
+    border: 2.6px solid gold
 }
 
-
-
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .hero h1 {
         font-size: 1.8rem;
+        text-align: left;
     }
+
     .hero h3 {
         font-size: 1.2rem;
+        text-align: left;
     }
-} */
+
+    .CTA-get-started {
+        width: 50%;
+        font-size: 1rem;
+    }
+
+    .form {
+        padding: 1rem;
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .buttons button {
+        width: 47%;
+        border: none;
+        max-height: 2rem;
+    }
+
+    .buttons{
+        border-radius: 9px;
+        max-width:100%;
+    }
+}
+
