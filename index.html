@@ -18,35 +18,39 @@
     </section>
 
     <section id="registration" class="registration">
-        <div class="form">
-            <form action="">
+        <form action="">
+            <div class="label">
                 <h2>Welcome to gasatURdoor</h2>
                 <p>Sign in or create an account to get started</p>
+            </div>
                 
-                <div class="label">
-                    <div class="buttons">
-                        <button>Login</button> <button>Register</button><br>
-                    </div>
-                </div>
+            <div class="label" style="background-color: blue; min-width: 50%">
+                <button>Login</button> <button>Register</button><br>
+                <!--  <div class="buttons">
+                    <button>Login</button> <button>Register</button><br>
+                </div> -->
+            </div>
 
-                <div class="label">
-                    <label for="email">Email</label><br>
-                    <input type="text" placeholder="username@example.com" required><br>
-                </div>
+            <div class="label">
+                <label for="email">Email</label><br>
+                <input type="text" placeholder="username@example.com" name="email" required><br>
+            </div>
                 
-                <div class="label">
-                    <label for="password">Password</label><br>
-                    <input type="text" required>
-                </div>
-                
-                <input type="submit" placeholder="Submit" class="submit">
-            </form>
-        </div>
+            <div class="label">
+                <label for="password">Password</label><br>
+                <input type="text" name="password" required>
+            </div>
+             
+            <div class="label">
+                <input type="submit" value="Submit" class="submit">
+            </div>
+        </form>
     </section>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
    
+<script src="index.js"></script>
 </body>
 </html>
