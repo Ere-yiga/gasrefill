@@ -16,6 +16,10 @@ body{
     overflow-x: hidden;
 }
 
+.logo{
+    text-align: center;
+}
+
 .hero{
     background-image: url("../img/hero-image.jpg");
     background-size: cover;
@@ -129,6 +133,16 @@ form>.submit{
     text-decoration: underline;
 }
 
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+
+}
 /* @media (max-width: 768px) {
     .hero h1 {
         font-size: 1.8rem;
