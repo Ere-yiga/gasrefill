@@ -13,6 +13,7 @@ html{
 
 body{
     min-height: 200vh;
+    overflow-x: hidden;
 }
 
 .hero{
@@ -91,7 +92,6 @@ form{
 }
 
 input{
-    
     min-height: 1.4rem;
     font-size: 1.1rem;
     padding: .6rem 1rem;
@@ -123,6 +123,10 @@ form>.submit{
     text-align: center;
     min-height: 1.4rem;
     font-size: 1.1rem;
+}
+
+.sign-up:hover{
+    text-decoration: underline;
 }
 
 /* @media (max-width: 768px) {
