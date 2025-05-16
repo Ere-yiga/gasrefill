@@ -8,7 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --hero-color: #1E40AF;
+    --hero-color: #02455a;
+    --hero-font : "Lucida Console", "Courier New", monospace;
 }
 
 body{
@@ -41,15 +42,43 @@ body{
     font-size: 1.4rem;
 }
 
-.hero h1{
-    font-weight: 900;
-    color: var(--hero-color);
+/*MESSAGE BOX*/
+#msg{
+    background-color: rgba(255, 255, 255, 0.2); /* white translucent */
+  padding: 2rem;
+  border-radius: 1rem;
+  color: #000;
+  backdrop-filter: blur(5px);
+
+  animation: msgbox  3s ease-in-out infinite;
+    
+}
+/*MESSAGE BOX KEYFRAME(ANIMATION)*/
+@keyframes msgbox {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
-.hero h3{
+.hero h1{
+    
+    color:var(--hero-color);
+    font-family: var(--hero-font);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight:bolder;
+}
+
+.hero p{
     color:  var(--hero-color);
     margin-top: 1rem;
-    font-weight: 500;
+    font-family: var(--hero-font);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight:bolder;
 }
 
 span{
@@ -58,7 +87,7 @@ span{
 
 a{
     text-decoration: none;
-    color: var(--hero-color);
+    color: white;
 }
 
 a:hover{
@@ -68,7 +97,7 @@ a:hover{
 .CTA-get-started{
     margin-top: 1rem; 
     width: 15rem;
-    background-color:#ffff; 
+    background-color: #375458; 
     height: 2rem; 
     font-size: 1.1rem;
     border-radius: 9px; 
