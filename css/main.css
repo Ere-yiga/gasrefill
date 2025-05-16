@@ -8,7 +8,11 @@ html{
     scroll-behavior: smooth;
 }
 :root{
-    --hero-color: #1E40AF;
+    --header: #007BFF;
+    --paragraph: #333333;
+    ---button: #FF9800;
+    ---button-color: #ffffff;
+    --button-over: #FB8C00;
 }
 
 body{
@@ -17,7 +21,7 @@ body{
 }
 
 .hero{
-    background-image: url("../img/hero-image.jpg");
+    background-image: url("../img/cylinder.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -37,17 +41,13 @@ body{
 
 .hero h1{
     font-weight: 900;
-    color: var(--hero-color);
+    color: var(--header);
 }
 
 .hero h3{
-    color:  var(--hero-color);
+    color:  var(--paragraph);
     margin-top: 1rem;
     font-weight: 500;
-}
-
-span{
-    color: gold;
 }
 
 a{
@@ -62,11 +62,12 @@ a:hover{
 .CTA-get-started{
     margin-top: 1rem; 
     width: 15rem;
-    background-color:#ffff; 
+    background-color: var(---button); 
     height: 2rem; 
     font-size: 1.1rem;
     border-radius: 9px; 
     border: none;
+    color: var(---button-color);
 }
 
 .registration{
