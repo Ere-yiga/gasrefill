@@ -7,17 +7,19 @@
 html{
     scroll-behavior: smooth;
 }
+
 :root{
-    --header: #007BFF;
-    --paragraph: #333333;
-    ---button: #FF9800;
-    ---button-color: #ffffff;
-    --button-over: #FB8C00;
+    --hero-color: #02455a;
+    --hero-font : "Lucida Console", "Courier New", monospace;
 }
 
 body{
     min-height: 200vh;
     overflow-x: hidden;
+}
+
+.logo{
+    text-align: center;
 }
 
 .hero{
@@ -27,6 +29,8 @@ body{
     min-height: 100vh;
     background-position: center;
     display: flex;
+    margin: 0 4px;
+    border-radius: 10px;
 }
 
 .hero-msg{
@@ -39,20 +43,44 @@ body{
     font-size: 1.4rem;
 }
 
-.hero h1{
-    font-weight: 900;
-    color: var(--header);
+#msg{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #000;
+    backdrop-filter: blur(5px);
+    animation: msgbox  3s ease-in-out infinite;
 }
 
-.hero h3{
-    color:  var(--paragraph);
+@keyframes msgbox {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.hero h1{
+    color:var(--hero-color);
+    font-family: var(--hero-font);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight:bolder;
+}
+
+.hero p{
+    color:  var(--hero-color);
     margin-top: 1rem;
-    font-weight: 500;
+    font-family: var(--hero-font);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight:bolder;
 }
 
 a{
     text-decoration: none;
-    color: var(--hero-color);
+    color: white;
 }
 
 a:hover{
@@ -62,12 +90,11 @@ a:hover{
 .CTA-get-started{
     margin-top: 1rem; 
     width: 15rem;
-    background-color: var(---button); 
+    background-color: #375458; 
     height: 2rem; 
     font-size: 1.1rem;
     border-radius: 9px; 
     border: none;
-    color: var(---button-color);
 }
 
 .registration{
@@ -78,9 +105,8 @@ a:hover{
 }
 
 form{
-    
     display: flex; 
-    padding: 1rem 0 1rem 0;   
+    padding: 1rem 0;   
     box-shadow: 2px 0.7px 4px;
     flex-direction: column;
     justify-content: center;
@@ -130,39 +156,9 @@ form>.submit{
     text-decoration: underline;
 }
 
-/* @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 1.8rem;
-        text-align: left;
-    }
-
-    .hero h3 {
-        font-size: 1.2rem;
-        text-align: left;
-    }
-
-    .CTA-get-started {
-        width: 50%;
-        font-size: 1rem;
-    }
-
-    form h2 {
-        font-size: 1.5rem;
-    }
-
-    input {
-        width: 100%;
-    }
-
-    .buttons button {
-        width: 47%;
-        border: none;
-        max-height: 2rem;
-    }
-
-    .buttons{
-        border-radius: 9px;
-        max-width:100%;
-    }
-} */
-
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
