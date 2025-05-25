@@ -1,21 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root{
-    --hero-color: #02455a;
-    --hero-font : "Lucida Console", "Courier New", monospace;
+  --hero-color: #02455a;
+  --hero-font : "Lucida Console", "Courier New", monospace;
 }
 
 body{
-    min-height: 200vh;
-    overflow-x: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .logo{
@@ -23,21 +23,21 @@ body{
 }
 
 .main-content{
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
 .hero{
-    background-image: url("../img/cylinder.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex: 1 1 50%;
-    min-width: 0;
-    min-height: 100vh;
-    background-position: center;
-    display: flex;
-    margin: 0 4px;
-    border-radius: 10px;
+  background-image: url("../img/cylinder.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1 1 50%;
+  min-width: 0;
+  min-height: 100vh;
+  background-position: center;
+  display: flex;
+  margin: 0 4px;
+  border-radius: 10px;
 }
 
 .hero-msg{
@@ -51,12 +51,11 @@ body{
 }
 
 #msg{
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 2rem;
-    border-radius: 1rem;
-    color: #000;
-    backdrop-filter: blur(5px);
-    animation: msgbox  3s ease-in-out infinite;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  animation: msgbox  4s ease-in-out infinite;
 }
 
 @keyframes msgbox {
@@ -69,54 +68,54 @@ body{
 }
 
 .hero h1{
-    color:var(--hero-color);
-    font-family: var(--hero-font);
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight:bolder;
+  color:var(--hero-color);
+  font-family: var(--hero-font);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight:bolder;
 }
 
 .hero p{
-    color: var(--hero-color);
-    margin-top: 1rem;
-    font-family: var(--hero-font);
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight:bolder;
+  color: var(--hero-color);
+  margin-top: 1rem;
+  font-family: var(--hero-font);
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight:bolder;
 }
 
 a{
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover{
-    cursor: pointer;    
+  cursor: pointer;    
 }
 
 .CTA-get-started{
-    margin-top: 1rem; 
-    width: 15rem;
-    background-color: #375458; 
-    height: 2rem; 
-    font-size: 1.1rem;
-    border-radius: 9px; 
-    border: none;
+  margin-top: 1rem; 
+  width: 15rem;
+  background-color: #375458; 
+  height: 2rem; 
+  font-size: 1.1rem;
+  border-radius: 9px; 
+  border: none;
 }
 
 .registration{
-    min-height: unset;
-    display: block;
-    align-items: unset;
-    justify-content: unset;
+  min-height: unset;
+  display: block;
+  align-items: unset;
+  justify-content: unset;
 }
 
 .form-section{
-    flex: 1 1 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 0;
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
 }
 
 form {
@@ -155,6 +154,11 @@ textarea {
   resize: vertical;
 }
 
+div .submit{
+  background-color: var(--hero-color);
+  color: white;
+  border: none;
+}
 .order button:hover {
   background-color: #45a049;
 }
@@ -189,5 +193,8 @@ footer p{
   .form-section {
     justify-content: flex-start;
     padding-top: 2rem;
+  }
+  body{
+    overflow-x: hidden;
   }
 }
