@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --family : ('Courier New', Courier, monospace);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: brown;
+    margin: 4px;
+    justify-content: space-around;
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-family: var(--family);
+}
+
+ul{
+    display: flex;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.hero{
+    background: url("../hero-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0 4px;
+    border-radius: 8px;
+}
